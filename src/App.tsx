@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import { useState } from "react";
+import { syllable } from "syllable";
 
 function App() {
   const [syllableCount, setSyllableCount] = useState(0);
@@ -13,7 +14,10 @@ function App() {
         <textarea
           name="text-input"
           value={textInput}
-          onChange={(e) => setTextInput(e.target.value)}
+          onChange={(e) => {
+            setTextInput(e.target.value);
+            setSyllableCount(syllable(e.target.value));
+          }}
         ></textarea>
       </div>
     </div>
