@@ -1,9 +1,9 @@
 import React from "react";
 import "./App.css";
-
-let syllableCount = 0
+import { useState } from "react";
 
 function App() {
+  const [syllableCount, setSyllableCount] = useState(0);
   return (
     <div className="App">
       <div className="text-input-container">
