@@ -1,0 +1,6 @@
+publications:
+  - path: paper/paper.pdf
+    type: journal-article
+    title: Test Paper
+    description: TEst paper description
+    stage:

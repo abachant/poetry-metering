@@ -1,0 +1,5 @@
+outs:
+- md5: bb974df6c612ce4cd294be4123729601
+  size: 698742
+  hash: md5
+  path: paper.pdf
